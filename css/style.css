@@ -1,0 +1,37 @@
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+.background {
+    background: url('galaxy.jpg') 0 0 no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 1920px;
+  }
+    
+.sprite {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: url('birds.pngs') 0 0 no-repeat;
+    height: 72px;
+    width: 288px;
+    transition: margin-bottom 1s ease;
+    overflow: hidden;
+    animation: fly 500ms steps(4) infinite alternate;
+  }
+
+@keyframes fly {
+    from {
+        background-position:  0 0;
+    }
+    to {
+       background-position:  0 -288px;
+    }
+  }
